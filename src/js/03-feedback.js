@@ -30,4 +30,5 @@ feedbackForm.addEventListener('submit', onSubmit);
 function onSubmit(evt) {
     evt.preventDefault();
     localStorage.removeItem(ls_Key);
+    evt.feedbackForm.reset();
 };
